@@ -51,7 +51,7 @@ def guy_shuba(x, y, s):
     # белый капюшон
     penColor(240, 240, 240)
     brushColor(240, 240, 240)
-    changeCoords(circle(x, y, s/3), [(x - s/3, y + s/5), (x + s/3, y - s/5)]
+    changeCoords(circle(x, y, s/3), [(x - s/3, y + s/5), (x + s/3, y - s/5)])
     # овал шубы
     penColor(135, 119, 97)
     brushColor(135, 119, 97)
