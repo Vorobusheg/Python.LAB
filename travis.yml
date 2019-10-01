@@ -1,0 +1,18 @@
+# yml originated from https://github.com/sendgrid/python-http-client
+
+language: python
+sudo: false
+cache: pip
+python:
+- '3.6'
+# Enable 3.7 without globally enabling sudo and dist: xenial for other build jobs
+matrix:
+  include:
+  - python: 3.7
+    dist: xenial
+    sudo: true
+fail_fast: true
+before_install:
+- pip install flake8
+script:
+- flake8 --max-line-length=120 .
