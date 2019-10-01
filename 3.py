@@ -82,15 +82,15 @@ def guy_hands(x, y, s):
 def guy_face(x, y, s):
     # коричневая хрень вокруг лица
     penColor(181, 169, 154)
-    brushColor(181, 169, 154) 
+    brushColor(181, 169, 154)
     changeCoords(circle(0, 0, 10), [(x - s/4, y + s/6), (x + s/4, y - s/6 + s/30)])
     # овал лица
     penColor(240, 240, 240)
-    brushColor(240, 240, 240) 
+    brushColor(240, 240, 240)
     changeCoords(circle(0, 0, 10), [(x - s/5 + s/30, y + s/7), (x + s/5 - s/30, y - s/11)])
     # лицо
     penColor(0, 0, 0)
-    mass = ((x - s/20, y + s/10), (x - s/30, y + s/30), (x + s/30, y + s/30), (x + s/20, y + s/ 9))
+    mass = ((x - s/20, y + s/10), (x - s/30, y + s/30), (x + s/30, y + s/30), (x + s/20, y + s/9))
     polyline(mass)
     line(x - s/8, y - s/30, x - s/25, y)
     line(x + s/8, y - s/30, x + s/25, y)
@@ -99,7 +99,7 @@ def guy_face(x, y, s):
 def guy_shuba_modify(x, y, s):
     # Коричневые шняги на шубе
     penColor(56, 44, 30)
-    brushColor(56, 44, 30) 
+    brushColor(56, 44, 30)
     rectangle(x - 3*s/7, y + s - s/10, x + 3*s/7, y + s)
     rectangle(x - s/20, y + s/6, x + s/20, y + s - s/25)
 
