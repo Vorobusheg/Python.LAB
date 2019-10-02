@@ -1,6 +1,6 @@
 from graph import windowSize, canvasSize
 from graph import penColor, brushColor
-from graph import circle, polygon
+from graph import circle
 from graph import penSize, polyline
 from graph import changeCoords, run
 from graph import line, rectangle
