@@ -1,4 +1,9 @@
-from graph import *
+from graph import windowSize, canvasSize
+from graph import penColor, brushColor
+from graph import circle, polygon
+from graph import penSize, polyline
+from graph import changeCoords, run
+from graph import line, rectangle
 """x и y для каждой функции - координаты СО перехода (для дома середина нижней грани, для чувака центр лица),
 s характеризует размер
 (для дома пол длины основания, для чувака расстояние от центра лица до середины нижней части шубы),
