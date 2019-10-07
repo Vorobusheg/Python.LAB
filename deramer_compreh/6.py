@@ -1,10 +1,12 @@
 def sets_diff(A, B):
+"""пробегает оба множества и создает новое из уникальных элементов А"""
     C = []
     for i in range(len(A)):
         for j in range(len(B)):
             if A[i] == B[j]:
                 break
-        else: C.append(A[i])
+        else:
+            C.append(A[i])
     print(C)
 
 

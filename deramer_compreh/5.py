@@ -1,4 +1,5 @@
 def antiplag(M):
+"""сложнейшие операции"""
     S = set(M)
     print(S)
 
