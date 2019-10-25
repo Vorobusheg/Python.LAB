@@ -1,4 +1,4 @@
-from tkinter import mainloop, BOTH, Canvas, TK
+from tkinter import mainloop, BOTH, Canvas, Tk
 from random import randrange as rnd, choice
 from uuid import uuid4
 import json
