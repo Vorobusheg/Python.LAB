@@ -205,7 +205,7 @@ class Target():
         color = self.color = 'red'
         canv.coords(self.id, self.x - self.r, self.y - self.r, self.x + self.r, self.y + self.r)
         canv.itemconfig(self.id, fill=color)
-
+        
     def hit(self):
         """Попадание шарика в цель."""
         canv.coords(self.id, -10, -10, -10, -10)
@@ -213,7 +213,6 @@ class Target():
         self.y = -100
         self.vx = 0
         self.vy = 0
-
 
     def move(self):
         if self.x + self.vx > 780 or self.x + self.vx < 60:
@@ -230,6 +229,7 @@ class Target():
             self.y + self.r,
             fill=self.color
         )
+
 
 global iteration, conscore1, conscore2
 conscore1 = 0
@@ -314,7 +314,7 @@ def new_game():
     if iteration % 2:
         conscore2 += bullet - 2
     else:
-        conscore1 += bullet -2
+        conscore1 += bullet - 2
     canv.itemconfig(score1, text=str(-conscore1))
     canv.itemconfig(score2, text=str(-conscore2))
     iteration += 1
