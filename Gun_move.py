@@ -308,6 +308,7 @@ def new_game():
                 i.dell()
             bullets = []
             break
+        time.sleep(0.017)
     canv.itemconfig(screen1, text='')
     time.sleep(2)
     if iteration % 2:
