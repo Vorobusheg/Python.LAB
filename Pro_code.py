@@ -107,7 +107,7 @@ class Ball(Agent):
         self.x += self.vx
         self.y -= self.vy
         self.vy -= self.g
-        #walls check
+        # walls check
         if self.x + self.vx > 800:
             self.vx = -0.8*self.vx
             self.vy = 0.8*self.vy
